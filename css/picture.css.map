@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/layout/picture.scss"
+    ],
+    "names": [],
+    "file": "picture.css"
+}
