@@ -1,16 +1,98 @@
 
-.hero__title{
-  text-align: center;
-  margin:0 auto;
-  width: 696px;
+.hero {
+    text-align: center;
+    max-width: 1600px;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 1);
+    background:linear-gradient(to right, rgba(47,48,58,0.4),rgba(47, 48, 58 , 0.4)),url(/imeges/Header-bg-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    
+    @media screen and (max-width: 399px) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+@media screen and (min-width:320px
+) and (max-width: 767px) {
+  background:linear-gradient(to right, rgba(47,48,58,0.4),rgba(47, 48, 58 , 0.4)),url(/imeges/Header-bg-mob.jpg);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background:linear-gradient(to right, rgba(47,48,58,0.4),rgba(47, 48, 58 , 0.4)),url(/imeges/hero-bg-mob2x.jpg);
+    background-position: center;
+    background-size: cover;
+}
+}
+    
+
+    @media screen and (min-width:768px)
+  {
+    background:linear-gradient(to right, rgba(47,48,58,0.4),rgba(47, 48, 58 , 0.4)),url(/imeges/hero-bg-tablet.jpg);
+    padding-bottom: 118px;
+    padding-top: 118px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+     @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+   background:linear-gradient(to right, rgba(47,48,58,0.4),rgba(47, 48, 58 , 0.4)),url(/imeges/hero-bg-tablet2x.jpg);
+    background-position: center;
+    background-size: cover
+  }
+    
+  }
+
+ @media screen and (min-width:1200px)
+  {
+    background:linear-gradient(to right, rgba(47,48,58,0.4),rgba(47, 48, 58 , 0.4)),url(/imeges/head.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+     }
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background:linear-gradient(to right, rgba(47,48,58,0.4),rgba(47, 48, 58 , 0.4)),url(/imeges/hero-bg-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+      }
+     
+    }
+  .hero__title {
+  margin-bottom: 40px;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-color);
-  margin-bottom: 44px;
-  box-sizing: border-box;
-
+  color: #FFFFFF;
+  @media screen and (min-width:768px)
+  {
+    width: 360px;
+    height: 84px;
+    margin: auto;
+    margin-bottom: 40px;
+ }
+ @media screen and (min-width:1200px)
+  {
+  width: 696px;
+  height: 120px;
+  font-size: 44px;
+  line-height: 60px;
+  }
 }
-

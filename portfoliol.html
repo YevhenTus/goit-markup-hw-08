@@ -18,14 +18,19 @@
     <header class="header">
       <div class="container header-container">
       <a class="logo text-list" href="">Web<span class="logo-web">Studio</span></a>
+      <button class="menu-mob-open-button" type="button">
+           <svg class="mob-menu-open-icon button-burger" width="40px" height="40px">
+        <use class="" href="./imeges/icons/symbol-defs.svg#icon-menu_mob-open22"></use>
+      </svg>
+      </button>
       <nav>
         <ul class="site-nav list">
-          <li class="site-nav__item"><a href="index.html" class="site-nav__link text-list">Студия</a></li>
+          <li class="site-nav__item"><a href="index.html" class="site-nav__link  text-list">Студия</a></li>
           <li class="site-nav__item"><a href="portfoliol.html" class="site-nav__link current text-list">Портфолио</a></li>
           <li class="site-nav__item"><a href="" class="site-nav__link text-list">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="connect list">
+      <ul class="connect list ">
         <li class="connect__item">
           <a href="mailto:info@devstudio.com" class="connect__link text-list">
             <svg class="connect__icon" width="16" height="12">
@@ -41,12 +46,69 @@
         </li>
       </ul>
     </div>
+
+    </button>
+    <div class=" mob-menu is-hidden ">
+      <div class="container">
+      
+          <button type="button" class="menu-close-button">
+            <svg class="button-burger" width="40" height="40">
+                      <use class="icon-open-mobile" href="./imeges/icons/symbol-defs.svg#icon-close_40px-1"></use>
+            </svg>
+           </button>
+
+        <ul class="site-nav-menu list">
+          <li class="mob-items"><a href="index.html" class="site-nav-menu-item current text-list">Студия</a></li>
+          <li class="mob-items"><a href="portfoliol.html" class="site-nav-menu-item text-list">Портфолио</a></li>
+          <li class="mob-items"><a href="" class="site-nav-menu-item text-list">Контакты</a></li>
+        </ul>
+      </div>  
+
+      <div class="bot-men-wrap">
+        <div class="container">
+        <ul class="mob-connect list ">
+        <li class="mob-connect-item">
+          <a href="tel:+380961111111" class="mob-connect-link text-list">+380961111111</a>
+        </li>
+
+        <li class="mob-connect-item">
+          <a href="mailto:info@devstudio.com" class="mob-connect-email text-list">info@devstudio.com</a>
+        </li>
+
+       
+      </ul>
+
+      <ul class="mob-soc list">
+             <li class="mob-soc-item">
+                <a class="mob-soc-link" href="">Instagram</a>
+              </li>
+
+              <li class="mob-soc-item">
+                <a class="mob-soc-link" href="">Twitter</a>
+              </li>
+
+              <li class="mob-soc-item">
+                <a class="mob-soc-link" href="">Facebook</a>
+              </li>
+              </li>
+
+              <li class="mob-soc-item">
+                <a class="mob-soc-link" href="">linkedin</a>
+              </li>
+            </ul>
+            </div>
+          </div>
+
+
+        
+    </div>
+
     </header>
 
 <!-- main -->
     <main class="port-hero">
      <section class="portfolio-section">
-      <div class="test-container">
+      <div class="container">
             <ul class="list flex-navigation">
                 <li class="fl-nav-item"><button type="button" class="nav-btn">Все</button></li>
                 <li class="fl-nav-item"><button type="button" class="nav-btn">Веб-сайты</button></li>
@@ -59,7 +121,29 @@
           <li class="flex-element">
               <a class="link-shadow" href="">
              <div class="text-wrap">
-               <img class="img" src="imeges/laptop.jpg" alt="фото на ноутбуці" width="370" height="294" >
+
+<picture>
+                  <source srcset="./imeges/laptop.jpg 1x,
+                                  ./imeges/laptop-2x.jpg 2x"
+                  media="(min-width:1200px)">
+
+                  <source srcset="./imeges/first-1x-tab.jpg 1x,
+                                  ./imeges/first-2x-tab.jpg 2x"
+                  media="(min-width:768px)">
+
+                  <source srcset="./imeges/first-1x-mob.jpg 1x,
+                                  ./imeges/first-2x-mob.jpg 2x"
+                                
+                  media="(min-width:320px)">
+
+                <img src="./imeges/laptop.jpg" alt="" width="100%">
+                
+                  
+              
+          </picture>
+
+
+               
                 <p class="cards-info-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.
                 </p>
@@ -74,7 +158,28 @@
             <li class="flex-element">
             <a class="link-shadow" href="">
               <div class="text-wrap">
-                  <img class="img" src="imeges/bassketball.jpg" alt="гра у баскетбол" width="370" height="294">
+
+<picture>
+                  <source srcset="./imeges/bassketball.jpg 1x,
+                                  ./imeges/bassketball-2x.jpg 2x"
+                  media="(min-width:1200px)">
+
+                  <source srcset="./imeges/basketball-1x-tab.jpg 1x,
+                                  ./imeges/basketball-2x-tab.jpg 2x"
+                  media="(min-width:768px)">
+
+                  <source srcset="./imeges/basketball-1x-mob.jpg 1x,
+                                  ./imeges/basketball-2x-mob.jpg 2x"
+                                
+                  media="(min-width:320px)">
+
+                <img src="./imeges/bassketball.jpg" alt="" width="100%">
+                
+                  
+              
+          </picture>
+
+                  
                  <p class="cards-info-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
              </div>
@@ -88,7 +193,28 @@
             <li class="flex-element">
               <a class="link-shadow" href="">
               <div class="text-wrap">
-              <img  class="img" src="imeges/fish.jpg" alt="рибний ресторан" width="370" height="294" >
+
+        <picture>
+                  <source srcset="./imeges/fish.jpg 1x,
+                                  ./imeges/fish-2x.jpg 2x"
+                  media="(min-width:1200px)">
+
+                  <source srcset="./imeges/seafood-1x-tab.jpg 1x,
+                                  ./imeges/sea-food-2x-tab.jpg 2x"
+                  media="(min-width:768px)">
+
+                  <source srcset="./imeges/sea-food-1x-mob.jpg 1x,
+                                  ./imeges/sea-food-2x-mob.jpg 2x"
+                                
+                  media="(min-width:320px)">
+
+                <img src="./imeges/fish.jpg" alt="" width="100%">
+                
+                  
+              
+          </picture>
+
+              
               <p class="cards-info-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
               </div>
@@ -103,7 +229,27 @@
             <li class="flex-element">
               <a class="link-shadow" href="">
               <div class="text-wrap">
-              <img  class="img" src="imeges/earphones.jpg" alt="навушники" width="370" height="294" >
+
+<picture>
+                  <source srcset="./imeges/earphones.jpg 1x,
+                                  ./imeges/earphones-2x.jpg 2x"
+                  media="(min-width:1200px)">
+
+                  <source srcset="./imeges/earphones-1x-tab.jpg 1x,
+                                  ./imeges/earphones-2x-tab.jpg 2x"
+                  media="(min-width:768px)">
+
+                  <source srcset="./imeges/ear-phones-1x-mob.jpg 1x,
+                                  ./imeges/ear-phones-2x-mob.jpg 2x"
+                                
+                  media="(min-width:320px)">
+
+                <img src="./imeges/earphones.jpg" alt="" width="100%">
+                
+                  
+              
+          </picture>
+
               <p class="cards-info-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
               </div>
@@ -117,7 +263,24 @@
             <li class="flex-element">
               <a class="link-shadow" href="">
               <div class="text-wrap">
-              <img  class="img" src="imeges/boxes.jpg" alt="коробки" width="370" height="294" >
+
+          <picture>
+                  <source srcset="./imeges/boxes.jpg 1x,
+                                  ./imeges/boxes-2x.jpg 2x"
+                  media="(min-width:1200px)">
+
+                  <source srcset="./imeges/box-1x-tab.jpg 1x,
+                                  ./imeges/box-2x-tab.jpg 2x"
+                  media="(min-width:768px)">
+
+                  <source srcset="./imeges/boxes-1x-mob.jpg 1x,
+                                  ./imeges/boxes-2x-mob.jpg 2x"
+                  media="(min-width:320px)">     
+                  
+            <img src="./imeges/boxes.jpg" alt="" width="100%">        
+              
+          </picture>
+
               <p class="cards-info-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
               </div>
@@ -131,7 +294,28 @@
             <li class="flex-element">
               <a class="link-shadow" href="">
               <div class="text-wrap">
-              <img class="img" src="imeges/monitor.jpg" alt="монытор" width="370" height="294" >
+
+<picture>
+                  <source srcset="./imeges/monitor.jpg 1x,
+                                  ./imeges/monitor-2x.jpg 2x"
+                    
+                  media="(min-width:1200px)">
+
+                  <source srcset="./imeges/screen-1x-tab.jpg 1x,
+                                  ./imeges/screen-2x-tab.jpg  2x"
+                  media="(min-width:768px)">
+
+                  <source srcset="./imeges/screen-1x-mob.jpg 1x,
+                                  ./imeges/screen-2x-mob.jpg 2x"
+                                
+                  media="(min-width:320px)">
+
+                <img src="./imeges/monitor.jpg" alt="" width="100%">
+                
+                  
+              
+          </picture>
+
               <p class="cards-info-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
               </div>
@@ -145,7 +329,27 @@
             <li class="flex-element">
               <a class="link-shadow" href="">            
               <div class="text-wrap">
-              <img class="img" src="imeges/book.jpg" alt="книга" width="370" height="294" >
+
+<picture>
+                  <source srcset="./imeges/book.jpg 1x,
+                                  ./imeges/book-2x.jpg 2x"
+                  media="(min-width:1200px)">
+
+                  <source srcset="./imeges/book-1x-tab.jpg 1x,
+                                  ./imeges/book-2x-tab.jpg 2x"
+                  media="(min-width:768px)">
+
+                  <source srcset="./imeges/book-1x-mob.jpg 1x,
+                                  ./imeges/book-2x-mob.jpg 2x"
+                                
+                  media="(min-width:320px)">
+
+                <img src="./imeges/book.jpg" alt="" width="100%">
+                
+                  
+              
+          </picture>
+
               <p class="cards-info-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
               </div>
@@ -159,7 +363,28 @@
             <li class="flex-element">
               <a class="link-shadow" href="">
               <div class="text-wrap">
-              <img class="img" src="imeges/tagring.jpg" alt="тега проекту" width="370" height="294" >
+
+<picture>
+                  <source srcset="./imeges/tagring.jpg 1x,
+                                  ./imeges/tagring-2x.jpg 2x"
+                  media="(min-width:1200px)">
+
+                  <source srcset="./imeges/tag-1x-tab.jpg 1x,
+                                  ./imeges/tag-2x-tab.jpg 2x"
+                  media="(min-width:768px)">
+
+                  <source srcset="./imeges/tag-1x-mob.jpg 1x,
+                                  ./imeges/tag-2x-mob.jpg 2x"
+                                
+                  media="(min-width:320px)">
+
+                <img src="./imeges/tagring.jpg" alt="" width="100%">
+                
+                  
+              
+          </picture>
+
+             
               <p class="cards-info-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
               </div>
@@ -173,7 +398,26 @@
             <li class="flex-element"> 
               <a class="link-shadow" href="">
               <div class="text-wrap">
-              <img class="img" src="imeges/last-picture.jpg" alt="лептоп" width="370" height="294" >
+
+<picture>
+                  <source srcset="./imeges/last-picture.jpg 1x,
+                                  ./imeges/lastpicture-2x.jpg 2x"
+                  media="(min-width:1200px)">
+
+                  <source srcset="./imeges/laptop-1x-tab.jpg 1x,
+                                  ./imeges/laptop-2x-tab.jpg 2x"
+                  media="(min-width:768px)">
+
+                  <source srcset="./imeges/laptop-1x-mob.jpg 1x,
+                                  ./imeges/laptop-2x-mob.jpg 2x"
+                                
+                  media="(min-width:320px)">
+
+                <img src="./imeges/last-picture.jpg" alt="" width="100%">
+                
+                  
+              
+          </picture>
               <p class="cards-info-text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
               </div>
@@ -191,9 +435,9 @@
 
 <!-- footer -->
 
-<footer class="footer">
-  <div class="footer-cont">
-    <div class="studio-section-footer">    
+<footer class="footer ">
+  <div class="footer-cont container ">
+    <div class="studio-section-footer ">    
           <a class="logo-footer text-list" href="">Web<span class="logo-studio">Studio</span></a>
           <address class="addres-global">
             <p class="address-item">г. Киев, пр-т Леси Украинки, 26</p>
@@ -248,6 +492,7 @@
           <input class="ft-input-mail" 
                  type="email"
                  id="footer-mail"
+                 placeholder="E-mail"
                  > 
                 
           <label class="" for="footer-mail"></label>
@@ -256,6 +501,7 @@
                   <use class="footer-soc-icon" href="./imeges/icons/symbol-defs.svg#icon-telegram"></use>
               </svg>
           </button>
+          
         </form>
       </div>
 
@@ -265,6 +511,6 @@
       
     
     </footer>
-
+        <script src="./js/menu.js"></script>
   </body>
 </html>
