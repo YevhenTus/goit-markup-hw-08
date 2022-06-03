@@ -13,19 +13,21 @@
   align-items: center;
   } 
 
+:nth-last-child(n+2)
+
 .flex-navigation{
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
-
   @media screen and (max-width: 767px)
  {
     margin-bottom: -15px;
     flex-wrap: wrap;
     justify-content: start;
-}
    
+    }
+
+
 
    @media screen and (max-width: 768px)
   {
@@ -43,7 +45,15 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 15px;}
 }
-.fl-nav-item:last-child{margin: 0px;}
+
+.fl-nav-item:last-child{
+  @media screen and (max-width: 767px){
+    margin-right: 0px;
+    margin-bottom: 0px;
+    height: auto;
+  }
+  
+}
 
 .nav-btn{
   font-family: inherit;

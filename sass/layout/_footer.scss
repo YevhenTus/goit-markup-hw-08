@@ -1,7 +1,5 @@
 
 .ft-input-text{
-  font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -9,9 +7,10 @@
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+  text-align: center;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px){
-    text-align: center;
+  @media screen and (min-width: 1200px){
+     text-align: left;
   }
 }
 
@@ -55,8 +54,6 @@
 
 }
 .suscribe-container{
-    height: 118px;
-    max-width: 450px;
 
   @media screen and (min-width: 480px) and (max-width: 1199px){
     min-width: 480px;
@@ -132,7 +129,7 @@
 
 .studio-section-footer+.Join-soc{
   @media screen and (min-width: 768px){
-      margin-left: 70px;
+  
   }
 
   
