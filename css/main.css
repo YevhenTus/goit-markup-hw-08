@@ -3,7 +3,7 @@
   text-align: center;
   max-width: 1600px;
   background-color: #2f303a;
-  background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/imeges/Header-bg-mob.jpg);
+  background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/Header-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -20,7 +20,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero {
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/imeges/Header-bg-mob.jpg);
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/Header-bg-mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -29,7 +29,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/imeges/hero-bg-mob2x.jpg);
+    background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imeges/hero-bg-mob2x.jpg);
     background-position: center;
     background-size: cover;
   }
