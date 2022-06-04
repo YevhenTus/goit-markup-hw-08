@@ -3,56 +3,77 @@
   max-width: 100%;
   height: auto;
 }
-
-.flex-container{
-  margin-top: 15px;
-  display: flex;
-  flex-wrap: wrap;
  
+.flex-container{
 
-@media screen and (min-width: 320px) and (max-width: 480px)
+
+
+  @media screen and (min-width: 320px) and (max-width: 480px)
   {
     display: flex;
     flex-direction: column;
     margin-top: 30px;
   }
-   
 
-   @media screen and (min-width: 768px) and (max-width: 1199px)
-  {
-   width: 768px;
+  @media screen and (max-width: 767px)
+  {margin-top: 40px;}
+
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    margin-top: 15px;
   }
   
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    width: 1200px;
+ 
+  @media screen and (min-width: 1200px)
+{
+ 
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;  
+  
 }}
+
+.flex-navigation+.flex-container{
+@media screen and (min-width: 1200px){
+  margin-top: 35px;
+}
+}
+
+
+
+
 .projects__item:not(:last-child) {
   margin-bottom: 0px;
 }
 
 .flex-element{
- display: flex;
-
- margin: 0;
-
-@media screen and (max-width: 767px)
- {
-    margin-top: 30px;
-  }
-  
-@media screen and (min-width: 768px) and (max-width: 1199px)
-{
     display: flex;
-    width: 354px;
-    margin: 15px;
-}
+        flex-wrap: wrap;
+    margin: -15px;
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px)
+    {
+      display: flex;
+      width: 354px;
+      margin: 15px;
+    }
 
-@media screen and (min-width: 1200px)
-{
-
- margin: 15px;
+    @media screen and (min-width: 1200px){
+      display: flex;
+      margin: 15px;
+      box-sizing: border-box;
+      
+    }
 }
+ .flex-element:not(:last-child) {
+@media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+}
+  
+
+
 }
 
 .link-shadow{
@@ -94,7 +115,7 @@ box-shadow:
   line-height: 1.56;
   letter-spacing: 0.03em;
   padding:  64px 24px 64px 24px;
-  transform: translateY(100%);
+  transform: translateY(102%);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (min-width: 480px) and (max-width: 767px)

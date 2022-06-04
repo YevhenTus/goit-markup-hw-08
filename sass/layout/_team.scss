@@ -12,6 +12,14 @@
 }}
 
 .team__title{
+  @media screen and (max-width: 1199px)
+  {
+    font-size: 28px;
+    line-height: 1.8;
+}
+
+
+  
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -31,12 +39,18 @@
 }
 
 .team__list{
- 
+ margin-bottom: -30px;
+  
  @media screen and (min-width: 738px)
   {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    
+  }
+
+  @media screen and (min-width: 1200px){
+    margin-bottom: -30px;
   }
 
   

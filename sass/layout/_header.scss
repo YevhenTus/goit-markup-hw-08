@@ -97,14 +97,21 @@ color: var(--accent-color);
   margin-left: auto; 
   @media screen and (min-width:768px )and (max-width: 1199px)
  {
-
   flex-direction: column;
+
 }
 
 @media screen and (min-width:100px )and (max-width: 767px){
      display: none;
 }
 }
+
+.connect__item:not(:last-child){
+  margin-bottom: 10px;
+}
+
+
+
 
 .connect__item + .connect__item{
 
